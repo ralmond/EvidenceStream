@@ -1,0 +1,20 @@
+---
+title: "Contexts and Scoring Windows"
+---
+
+## Tasks, Activities and Contexts
+
+## Scoring Context Window
+
+```{r}
+N <- 6
+contexts <- rgamma(N)
+dat <- data.frame(name=c("Assessment",paste("Context",1:N)),
+                  window=c("Assessment",rep("Context",N)),
+                  time=c(sum(contexts),contexts))
+
+
+```
+
+
+## Assessment Window

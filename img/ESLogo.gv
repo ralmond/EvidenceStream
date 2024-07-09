@@ -1,0 +1,14 @@
+digraph EvidenceStream {
+
+  node [shape="box", style = "filled, rounded"]
+  
+  A [label = "Evidence Capture"];
+  B [label = "Evidence Preparation", fillcolor = "Turquoise1"];
+  C [label = "Evidence Identification", fillcolor = "Turquoise2"];
+  D [label = "Evidence Accumulation", fillcolor = "Turquoise3"];
+  E [label = "Evidence-Centered Decisions", fillcolor = "Turquoise4"];
+
+  A->B; B->C; C->D; D->E;
+  E->A [style=dashed]
+
+}

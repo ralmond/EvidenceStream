@@ -1,0 +1,70 @@
+project:
+  type: website
+
+website:
+  title: "EvidenceStream"
+  navbar:
+    logo: img/ESLogo.svg
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Architecture"
+        menu: 
+        - text: "Four-Process Architecture"
+          href: Proc4.qmd
+        - text: "Contexts and Scoring Windows"
+          href: Context.qmd
+      - text: "Messages"
+        menu:
+        - text: "Message Format:
+          href: P4Message.qmd
+        - text: "Headers"
+          href: P4-headers.qmd
+        - text: "Data"
+          href: P4-data.qmd
+        - text: "Footers"
+          href: P4-foot.qmd
+      - text: "EC"
+        menu:
+        - text: "Evidence Capture"
+        - href: EC.qmd
+      - text: "EI"
+        menu:
+        - text: "Evidence Identification"
+          href: EI.qmd
+        - text: "Filters"
+          href: EI-filter.qmd
+        - text: "Maps"
+          href: EI-map.qmd
+        - text: "Reductions"
+          href: EI-sum.qmd
+    - text: "EA"
+      menu:
+      - text: "Evidence Accumulation"
+        href: EA.qmd
+      - text: "Normal Scoring"
+        href: EA-score.qmd
+      - text: "Revisions"
+        href: EA-revise.qmd
+      - text: "Statistics"
+        href: EA-stats.qmd
+    - text: "AS"
+      menu:
+      - text: "Activity Selection"
+        href: AS.qmd
+    - text: "Specifications"
+      menu:
+      - text: "Watermarks"
+        href: Watermarks.qmd
+      - text: "Assessemnt Schemas"
+        href: Schemas.qmd
+    - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

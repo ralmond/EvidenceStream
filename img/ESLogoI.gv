@@ -1,0 +1,14 @@
+digraph EvidenceStream {
+
+  node [shape="box", style = "filled, rounded", fontsize=24]
+  
+  A [label = "EC"];
+  B [label = "EP", fillcolor = "Turquoise1"];
+  C [label = "EI", fillcolor = "Turquoise2"];
+  D [label = "EA", fillcolor = "Turquoise3"];
+  E [label = "ECD", fillcolor = "Turquoise4"];
+
+  A->B; B->C; C->D; D->E;
+  E->A [style=dashed]
+
+}

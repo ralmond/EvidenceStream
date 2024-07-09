@@ -1,0 +1,39 @@
+---
+title: "EvidenceStream"
+---
+
+Evidence Stream is a streaming architecture for scoring assessments.  It 
+particularly focuses on extracting evidence from the sequence of actions a 
+learner uses in solving a problem.  It also is designed to support different
+parts of the assessment architecture being located on different physical or 
+virutal machines using network communication to communicate between them.
+
+## Four-Process Architecture
+
+
+## Contents
+
+1. [Four-Process](Proc4.qmd)
+2. [Contexts and Scoring Windows](Context.qmd)
+3. [Message Format](P4Message.qmd)
+  - [Headers](P4-headers.qmd)
+  - [Data](P4-data.qmd)
+  - [Footers](P4-foot.qmd)
+4. [Evidence Capture](EC.qmd)
+5. [Evidence Identification](EI.qmd)
+  - [Filters](EI-filter.qmd)
+  - [Maps](EI-map.qmd)
+  - [Reductions](EI-sum.qmd)
+6. [Evidence Accumulation](EA.qmd)
+  - [Normal Scoring](EA-score.qmd)
+  - [Revisions](EA-revise.qmd)
+  - [Statistics](EA-stats.qmd)
+7. [Activity Selection](AS.qmd)
+8. [Watermarks](Watermarks.qmd)
+9. [Assessemnt Schemas](Schemas.qmd)
+
+
+
+
+
+

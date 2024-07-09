@@ -1,0 +1,49 @@
+---
+title: "Four-Process Architecture"
+---
+
+## The Four Processes
+
+@Proc4 described an idealized model of an assessment as consisting of four
+processes.  @Streaming updated this model to work with a streaming system.  The 
+focus is on assessments which are capturing data about the process in which the 
+learner solves a particular problem.  The architecture allows for the processes to 
+be on different computers (or computer/human systems) which communicate through the 
+internet.  Figure @fig-proc4 shows the four processes.
+
+![Four-Processes Architecture](img/Proc4.png)
+
+The evidence capture process (originally called the presentation process) is what
+the learner interacts with.  It is responsible for noting interesting bits of what 
+the learner does, called _events_.  It passes these events to the evidence 
+identification process.
+
+Each event occurs within a scoring [context](Context.qmd).  The evidence 
+identification process examines all events within a scoring context and identifies
+a number of _observable_ features of the performance.  It then passes these 
+observables to the evidence accumulation process.
+
+The evidence accumulation process maintains an estimate of the student proficiency.
+After each message containing observables from the evidence identification 
+process, it updates that student model.  It then passes on statistics (estimates of 
+the proficiency) to the activity selection process.
+
+The activity selection process looks at the statistics from evidence accumulation 
+and makes two decisions:  (1) what activity (problem) should the learner attempt 
+next, or (2) has enough information been gathered so that the assessment can stop.
+If the assessment is adaptive (that is the sequence of assessment activities is not
+predetermined, then it sends a message back to the evidence capture process about what it should do next.
+
+## Evidence Capture (EC)
+
+
+
+## Evidence Identification (EI)
+
+## Evidence Accumulation (EA)
+
+## Activity Selection (AS)
+
+
+
+
